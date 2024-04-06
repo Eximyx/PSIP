@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Сенкевич Виталий Андреевич</title>
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        color:white;
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    table td {
+        border: 2px solid white;
+    }
+    </style>
+</head>3
+<body background="img/bg.jpg">
+<!-- 2. Форматирование текста -->
+
+    <h2 style="text-align: center;">Сенкевич Виталий Андреевич</h2>
+    <h2 style="text-align: center;">Сенкевич Виталий Андреевич</h2>
+    <span style="text-align:left;color:green"><em>Сенкевич Виталий Андреевич</em></span><br>
+    <span style="text-align:right"><u>ПЗТ-38</u></span><br>
+    <p>
+        Я люблю играть в футбол, честно!
+    </p>
+<!-- 3. Создание списков -->
+    <ul>
+        <li>Зима</li>
+        <li>Лето</li>
+        <li>Осень</li>
+    </ul>
+<!-- 4. Работа с изображениями -->
+
+    <img src="img/bg.jpg" alt="КАРТИНКА" style="border: 5px solid white;filter:brightness(525%) sepia(152%)" height="50" width="200"><br>
+<!-- 5. Гиперссылок и внутренних ссылок -->
+
+    <a href="pages/main.html">
+        <img src="img/bg.jpg" alt="картинка" style="filter:brightness(525%) sepia(152%)" height="50" width="200">
+    </a><br>
+    <a href="mailto:mr.vitalik.12352@gmail.com">Напишите нам</a>
+<!-- 6. Создание таблиц -->
+<table>
+    <tr>
+        <td rowspan="3">Web-дизайн</td>
+        <td rowspan="2">Web-дизайн</td>
+        <td>Web-дизайн</td>
+    </tr>
+    <tr>
+        <td  style="background-color: grey;">Web-дизайн</td>
+    </tr>
+    <tr>
+        <td  style="background-color: grey;">web-дизайн</td>
+        <td>web-дизайн</td>
+    </tr>
+</table>
+<!-- 7. Создать пользовательскую форму следующего вида: -->
+<br>
+
+<form action="javascript(0)" style="display: flex; flex-direction: column;">
+    <span style="text-align: left; width: 100%;font-size: medium;font-weight: 100; margin-top: 10px;">Фильтр расписания</span>
+    <div style="display: flex; justify-content: space-between;width: 50%;margin-top:20px">
+        <label for="group"><i>Группа:</i></label>
+        <select name="group" style="width: 200px;" id="group">
+            <option value="2">КФ-04-03</option>
+            <option value="2">КФ-04-03</option>
+            <option value="2">КФ-04-03</option>
+        </select>
+    </div>
+    <div style="display: flex; justify-content: space-between;width: 50%; margin-top: 10px;">
+        <label for="day"><i>День недели:</i></label>
+        <select name="day" style="width: 200px;" id="day">
+            <option value="1">Вся неделя</option>
+            <option value="1">Вся неделя</option>
+            <option value="1">Вся неделя</option>
+        </select> 
+    </div>
+    <button style="width: fit-content;margin-left:175px;margin-top: 20px;">Показать</button>
+</form>
+</body>
+</html>
