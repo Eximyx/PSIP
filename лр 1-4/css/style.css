@@ -1,0 +1,49 @@
+.nav-bar > a {
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.nav-bar > ul > li {
+    display: inline;
+}
+
+.reviews {
+    width: 100px;
+    justify-content: space-around;
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid;
+    background-color: #00FFFF;
+    background: linear-gradient(#0231,#F444);
+    border-radius: 2px;
+}
+
+form > input {
+    padding: 5px;
+    border-color: lightblue;
+    border: 2px dashed;
+}
+
+table, th, td {
+    padding: 3px;
+    text-align: center;
+    border-spacing: 3px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+form > button {
+    border: 3px solid;
+}
+
+h2 {
+    text-align: center;
+    border: 2px solid;
+    background-color: #00FFFF;
+    background: linear-gradient(#0231,#F444);
+    border-radius: 2px;
+}

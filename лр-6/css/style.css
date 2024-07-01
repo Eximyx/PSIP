@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 108px 512px 108px 216px 108px;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.innerBlock {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.row {
+    grid-column: 1 / 4;
+}
+
+.half-width {
+    width: 50%;
+}

@@ -1,0 +1,12 @@
+body {
+    background-color: #7fff00;
+    font-family: Arial, serif;
+    font-size: 25pt;
+    color: #FF0000;
+}
+/* Используем псевдоэлемент для изменения стилей*/
+p:first-letter {
+    color:blue;
+    font-size: 20pt;
+}
+

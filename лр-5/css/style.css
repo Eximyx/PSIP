@@ -1,0 +1,23 @@
+*  {
+    padding: 0px;
+}
+.c-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-2 {
+    display: flex;
+}
+
+.container {
+    width: 1920px;
+}
+
+
+.block {
+    padding: 3px;
+    margin: 0px;
+    text-align: center;
+    border: 3px solid black;
+}
