@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<button id="mouse-click-button">
+    Нажми на меня
+</button>
+
+<div id="column" style="display: grid;align-items: center;align-content: center; width: 100%; height: 500px">
+    <img class="draggable-block">
+</div>
+<div id="pointer-block" style="display: block; height: 200px;width: 200px">
+    asdasda
+</div>
+
+<div id="scrollable-block" class="block">
+    dsadska
+    dkasdka
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto delectus doloremque dolorum ipsam laudantium maiores, odio odit quisquam quo saepe, sed totam. Aliquid culpa cumque cupiditate et nemo veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto delectus doloremque dolorum ipsam laudantium maiores, odio odit quisquam quo saepe, sed totam. Aliquid culpa cumque cupiditate et nemo veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto delectus doloremque dolorum ipsam laudantium maiores, odio odit quisquam quo saepe, sed totam. Aliquid culpa cumque cupiditate et nemo veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto delectus doloremque dolorum ipsam laudantium maiores, odio odit quisquam quo saepe, sed totam. Aliquid culpa cumque cupiditate et nemo veritatis.
+</div>
+
+
+<div id="touchable-block" class="block" style="margin-top: 200px; height: 300px">
+
+</div>
+<script defer>
+    var mouse = document.getElementById('mouse-click-button');
+
+    var draggableBlock = document.querySelector('.draggable-block');
+    var pointerBlock = document.getElementById('pointer-block');
+    var scrollableBlock = document.getElementById('scrollable-block');
+    var inputText = document.getElementById('input-text');
+    var touchableBlock = document.getElementById('touchable-block');
+
+    console.log(draggableBlock);
+
+    draggableBlock.addEventListener("dragstart", (e) => {
+        console.log("dad")
+    })
+
+    pointerBlock.addEventListener("pointermove", (e) => {
+        console.log("pointer move");
+    })
+
+    scrollableBlock.addEventListener('scroll', (e) => {
+        console.log("scrolling")
+    })
+
+    document.addEventListener("keydown", (e) => {
+        if (!['Control', 'r', 'Alt'].includes(e.key)) {
+            alert(e.key);
+        }
+    })
+
+    mouse.addEventListener('mouseup', (e) => {
+        console.log('mouse up')
+    });
+
+    mouse.addEventListener('mousedown', (e) => {
+        console.log('mouse down')
+    });
+
+    touchableBlock.addEventListener("touchstart", () => {
+        console.log("touching")
+    });
+
+    // click
+    // mouse
+    // pointer
+    // onkeydown()
+    // drag&drop
+    // scrollbar
+    // touchscreen
+
+    window.scrollX
+
+    inputText.addEventListener('drop', (e) => {
+        console.log(e.key);
+    });
+    inputText.addEventListener('drop', (e) => {
+        console.log(e.key);
+    });
+</script>
+</body>
+</html>
