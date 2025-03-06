@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользовательская форма</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="process.php" method="POST">
+        <div class="form-group">
+            <label>Имя <span class="required">*</span></label>
+            <input type="text" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Пол:</label>
+            <input type="radio" name="gender" value="M" checked> Мужской
+            <input type="radio" name="gender" value="F"> Женский
+        </div>
+
+        <div class="form-group">
+            <label>Девичья фамилия:</label>
+            <input type="text" name="maiden_name">
+        </div>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
